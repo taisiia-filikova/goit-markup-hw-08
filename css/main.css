@@ -260,6 +260,7 @@ img {
 }
 
 .logo {
+  width: 141px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -269,15 +270,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
     margin-right: 81px;
     padding-top: 26px;
     padding-bottom: 26px;
@@ -286,10 +278,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 148px;
+    width: 153px;
     font-size: 26px;
     line-height: 1.2;
     margin-right: 85px;
