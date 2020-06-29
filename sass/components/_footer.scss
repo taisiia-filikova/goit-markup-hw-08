@@ -1,0 +1,14 @@
+footer {
+  background-color: $footerBGColor;
+}
+
+footer a {
+  display: inline-block;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}

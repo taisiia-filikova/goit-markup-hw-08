@@ -1,0 +1,39 @@
+.advantages {
+  @extend %flex;
+}
+
+.advantages .item + .item {
+  margin-left: 30px;
+}
+
+.advantages .background {
+  @extend %centredFlex;
+  margin-bottom: 30px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  min-width: 270px;
+  min-height: 120px;
+}
+
+.advantages .img {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.advantages .title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages .title-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}

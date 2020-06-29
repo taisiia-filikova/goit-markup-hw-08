@@ -1,0 +1,42 @@
+@import "./utils/variables";
+@import "./utils/tagsettings";
+@import "./utils/container";
+@import "./utils/section";
+@import "./utils/section-title";
+@import "./utils/footer-title";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/is-hidden";
+@import "./utils/breakpoints";
+
+// Header
+@import "./components/header";
+@import "./components/header-navigation";
+@import "./components/logo";
+@import "./components/header.contacts";
+
+// Hero
+@import "./components/hero";
+
+// Advantages
+@import "./components/advantages";
+
+// Activity
+@import "./components/activity";
+
+// Team
+@import "./components/team";
+
+// Customers
+@import "./components/customers";
+
+// Footer
+@import "./components/footer";
+@import "./components/footer-contacts";
+@import "./components/footer-follow-us";
+@import "./components/footer-subscribe";
+
+// Modal
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/checkbox";

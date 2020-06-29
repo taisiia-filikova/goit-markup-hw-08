@@ -1,0 +1,57 @@
+.checkbox-label {
+  @extend %centredFlex;
+  flex-direction: row;
+
+  color: $paragraphColor;
+
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+
+  & a {
+    color: $accentColor;
+    text-decoration-line: underline;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  margin: -1px;
+
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .checkbox-icon {
+    background-color: $accentColor;
+    border: 2px solid $accentColor;
+    border-radius: 2px;
+    background-origin: border-box;
+    background-image: url(../img/check.svg);
+    background-size: contain;
+  }
+}
+
+.checkbox-icon {
+  display: block;
+  margin-left: 0;
+  margin-right: 8px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: $primaryWhiteColor;
+  border: 2px solid $titleTextColor;
+  border-radius: 2px;
+
+  transition: background-color $duration $timingFunction;
+}
+
+.agree {
+  margin: 0;
+}

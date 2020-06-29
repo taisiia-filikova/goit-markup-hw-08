@@ -1,0 +1,40 @@
+.footer-contacts {
+  margin-right: 69px;
+
+  background-color: $footerBGColor;
+  color: $footerTextColor;
+  margin-left: 0;
+
+  & a {
+    margin-bottom: 10px;
+  }
+}
+
+.logo-footer {
+  color: $accentColor;
+  font-family: $logoFont;
+  font-size: 22px;
+  line-height: 1.63;
+}
+
+.logo-footer > span {
+  color: $primaryWhiteColor;
+}
+
+.footer-contacts .address {
+  margin-bottom: 9px;
+  color: $primaryWhiteColor;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-contacts .link {
+  font-style: normal;
+  color: $footerTextColor;
+}
+.footer-contacts .mail {
+  margin-bottom: 9px;
+}

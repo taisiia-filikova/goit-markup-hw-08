@@ -1,0 +1,47 @@
+.header-contacts {
+  @extend %flex;
+  align-items: baseline;
+
+  margin-left: auto;
+
+  transition: color $duration $timingFunction;
+}
+
+.header-contacts .item + .item {
+  margin-left: 30px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $paragraphColor;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &.icon:hover,
+  &.icon:focus {
+    --color4: $accentColor;
+  }
+}
+
+.cover {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+.phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}

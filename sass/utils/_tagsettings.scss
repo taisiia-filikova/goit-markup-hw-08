@@ -1,0 +1,25 @@
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+
+  background-color: $primaryWhiteColor;
+  color: $titleTextColor;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: $paragraphColor;
+}
+
+section {
+  padding-bottom: 94px;
+}
