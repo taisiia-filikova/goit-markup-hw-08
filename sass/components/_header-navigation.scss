@@ -1,20 +1,34 @@
-.header-nav {
-  display: flex;
-  align-items: center;
-}
+// .header-nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .navigation {
-  @extend %flex;
-  margin-left: 80px;
+  margin: 0px;
+  padding: 0px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    & .item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .navigation .item + .item {
-  margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 50px;
+  }
 }
 
 .navigation .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 
   color: $titleTextColor;
 
@@ -29,22 +43,34 @@
   &:focus {
     color: $accentColor;
   }
+
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
 }
 
 .current {
   color: $accentColor;
-  position: relative;
 
   &::after {
     content: "";
+    display: block;
 
-    position: absolute;
     bottom: 0;
     left: 0;
+    margin-top: 8px;
 
     background-color: $accentColor;
+    background-size: auto;
     width: 100%;
     height: 4px;
     border-radius: 2px;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+    }
   }
 }

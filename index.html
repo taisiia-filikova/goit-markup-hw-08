@@ -14,37 +14,48 @@
 
 <body>
   <!-- Header -->
-  <header>
+  <header class="page-header">
     <div class="container header">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo">Web <span>Studio</span></a>
+      <a href="./index.html" class="logo">Web<span>Studio</span></a>
 
-        <ul class="nav navigation">
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+        <nav class="header-nav">
+          <ul class="nav navigation">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="nav header-contacts">
           <li class="item">
-            <a href="./index.html" class="link current">Студия</a>
+            <a href="mailto:info@devstudio.com " class="link contacts">
+              <svg class="icon cover">
+                <use href="./img/sprite.svg#cover_icon"></use>
+              </svg>info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
+            <a href="tel:+380961111111" class="link contacts">
+              <svg class="icon phone">
+                <use href="./img/sprite.svg#phone_icon"></use>
+              </svg>
+              +38 096 111 11 11</a>
           </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
-      </nav>
+      </div>
 
-      <ul class="nav header-contacts">
-        <li class="item">
-          <a href="mailto:info@devstudio.com " class="link contacts">
-            <svg class="icon cover">
-              <use href="./img/sprite.svg#cover_icon"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link contacts">
-            <svg class="icon phone">
-              <use href="./img/sprite.svg#phone_icon"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
+      <button type="button" class="menu-button" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-expanded="false"
+          aria-controls="menu-container">
+          <use class="cross-icon" href="./img/sprite.svg#menu"></use>
+          <use class="menu-icon" href="./img/sprite.svg#close2"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
   <main>
