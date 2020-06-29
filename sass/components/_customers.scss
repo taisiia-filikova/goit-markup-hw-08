@@ -1,57 +1,57 @@
 .customers {
-  @extend %flex;
+  // @extend %flex;
 }
 
 .customers .item + .item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 
 .customers .item {
-  @extend %centredFlex;
+  // @extend %centredFlex;
 
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 90px;
-  transition: border $duration $timingFunction;
+  // border: 1px solid #afb1b8;
+  // border-radius: 4px;
+  // width: 170px;
+  // height: 90px;
+  // transition: border $duration $timingFunction;
 
   &:hover,
   &:focus {
-    border: 1px solid $accentColor;
+    // border: 1px solid $accentColor;
   }
 
   &:hover .icon,
   &:focus .icon {
-    color: $accentColor;
+    // color: $accentColor;
   }
 }
 
 .customers .icon {
-  color: #afb1b8;
-  transition: color $duration $timingFunction;
+  // color: #afb1b8;
+  // transition: color $duration $timingFunction;
 }
 
-.company1 {
-  width: 44px;
-  height: 49px;
-}
-.company2 {
-  width: 40px;
-  height: 52px;
-}
-.company3 {
-  width: 41px;
-  height: 42px;
-}
-.company4 {
-  width: 79px;
-  height: 42px;
-}
-.company5 {
-  width: 59px;
-  height: 47px;
-}
-.company6 {
-  width: 88px;
-  height: 45px;
-}
+// .company1 {
+//   width: 44px;
+//   height: 49px;
+// }
+// .company2 {
+//   width: 40px;
+//   height: 52px;
+// }
+// .company3 {
+//   width: 41px;
+//   height: 42px;
+// }
+// .company4 {
+//   width: 79px;
+//   height: 42px;
+// }
+// .company5 {
+//   width: 59px;
+//   height: 47px;
+// }
+// .company6 {
+//   width: 88px;
+//   height: 45px;
+// }

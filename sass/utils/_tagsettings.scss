@@ -21,7 +21,11 @@ p {
 }
 
 section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
 }
 
 img {
