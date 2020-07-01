@@ -1,0 +1,84 @@
+.header-contacts {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header-contacts .item + .item {
+  margin-top: 16px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.contacts {
+  color: $paragraphColor;
+
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14px;
+
+  transition: background-color $duration $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &.icon:hover,
+  &.icon:focus {
+    --color4: $accentColor;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
+}
+
+.header-contacts-icon {
+  margin-right: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}
+
+.cover {
+  width: 16px;
+  height: 11px;
+}
+
+.phone {
+  width: 10px;
+  height: 15px;
+}
