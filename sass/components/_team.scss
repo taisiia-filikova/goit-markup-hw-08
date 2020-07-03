@@ -40,6 +40,7 @@
 }
 
 .people .item {
+  margin: 0;
   width: 100%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -54,7 +55,7 @@
         margin-bottom: 60 px;
    }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     width: 354px;
 
     &:not(:nth-child(2n)) {
@@ -70,9 +71,26 @@
     width: 270px;
   }
 
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+
   &:not(:nth-last-child(-n + 2)) {
     margin-bottom: 0;
   }
+
+  // &:not(:nth-child(2n)) {
+  //     margin-right: 30px;
+  //   }
+
+  //   &:not(:nth-last-child(-n + 2)) {
+  //     margin-bottom: 30px;
+  //   }
+}
+
+.people .item + .item {
+   @media screen and (min-width: $desktop) {
+  margin-left: 30px;
 }
 
 .face {
@@ -155,6 +173,7 @@
 
 .team-icon {
   display: block;
+  margin: 0;
   width: 20px;
   height: 20px;
   fill: #afb1b8;

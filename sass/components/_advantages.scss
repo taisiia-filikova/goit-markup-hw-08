@@ -33,6 +33,11 @@
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100%-30px) / 2);
+    margin: 0;
+  }
 }
 
 .advantages .item + .item {
@@ -52,7 +57,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    // width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
