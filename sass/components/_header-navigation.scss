@@ -4,8 +4,7 @@
 // }
 
 .navigation {
-  margin: 0px;
-  padding: 0px;
+  @extend %drumpingIndentation;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
@@ -16,6 +15,11 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 305px;
   }
 }
 
@@ -26,10 +30,9 @@
 }
 
 .navigation .link {
+  @extend %drumpingIndentation;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-
+  
   color: $titleTextColor;
 
   font-weight: 500;

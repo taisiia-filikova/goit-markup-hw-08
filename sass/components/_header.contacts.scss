@@ -1,6 +1,5 @@
 .header-contacts {
-  margin: 0;
-  padding: 0;
+  @extend %drumpingIndentation;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -65,7 +64,7 @@
   }
 }
 
-.header-contacts-icon {
+.header-contacts .icon {
   margin-right: 8px;
 
   @media screen and (min-width: $desktop) {

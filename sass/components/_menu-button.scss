@@ -1,0 +1,26 @@
+.menu-button {
+  @extend %drumpingIndentation;
+  display: inline-flex;
+  
+  border: none;
+  background-color: transparent;
+  fill: $titleTextColor;
+
+  & .cross-icon {
+    display: none;
+  }
+  &.is-open .cross-icon {
+    display: block;
+  }
+  &.is-open .menu-icon {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
