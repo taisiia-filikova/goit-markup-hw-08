@@ -1,7 +1,12 @@
+.activity-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .activity {
   @extend %flex;
 }
-
 .activity .item {
   position: relative;
 }

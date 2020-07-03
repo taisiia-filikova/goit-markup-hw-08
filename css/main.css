@@ -110,6 +110,14 @@ img {
   margin: 0;
 }
 
+.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
 .advantages .background {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,5 +615,41 @@ img {
   margin: 0;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 1199px) {
+  .activity-section {
+    display: none;
+  }
+}
+
+.activity .item {
+  position: relative;
+}
+
+.activity .item + .item {
+  margin-left: 30px;
+}
+
+.activity img {
+  display: block;
+  border-radius: 4px;
+  min-width: 370px;
+}
+
+.activity-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 27px 0;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
