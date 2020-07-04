@@ -59,12 +59,12 @@
   @media screen and (max-width: 1199px) {
     width: 354px;
 
-    &:not(:nth-child(2n)) {
-      // margin-right: 30px;
+    &:not(:nth-child(2n + 1)) {
+      margin-right: 30px;
     }
 
     &:not(:nth-last-child(-n + 2)) {
-      // margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 }

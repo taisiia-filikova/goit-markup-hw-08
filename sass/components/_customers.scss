@@ -1,0 +1,80 @@
+.customers {
+  @extend %flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.customers .item + .item {
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
+}
+
+.customers .item {
+  @extend %centredFlex;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  transition: border $duration $timingFunction;
+
+  width: calc((100% - 4 * 15px) / 2);
+  height: 90px;
+  margin: 15px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 6 * 15px) / 3);
+    height: 90px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+    height: 90px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    color: $accentColor;
+  }
+}
+
+.customers .icon {
+  color: #afb1b8;
+  transition: color $duration $timingFunction;
+}
+
+.company1 {
+  width: 44px;
+  height: 49px;
+}
+.company2 {
+  width: 40px;
+  height: 52px;
+}
+.company3 {
+  width: 41px;
+  height: 42px;
+}
+.company4 {
+  width: 79px;
+  height: 42px;
+}
+.company5 {
+  width: 59px;
+  height: 47px;
+}
+.company6 {
+  width: 88px;
+  height: 45px;
+}

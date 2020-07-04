@@ -1,120 +1,57 @@
-// .team-container {
-//   background-color: #f5f4fa;
-}
-
-.team {
-  // margin-left: auto;
-  // margin-right: auto;
-  // width: 1200px;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // padding-top: 94px;
-}
-
-.team-title {
-  // margin-bottom: 50px;
-  // margin-left: auto;
-  // margin-right: auto;
-}
-
-.people {
+.customers {
   // @extend %flex;
-  // margin-bottom: 0;
 }
 
-.people .item {
-  // box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  //   0px 1px 3px rgba(0, 0, 0, 0.12);
-  // border-radius: 4px;
-}
-
-.people .item + .item {
+.customers .item + .item {
   // margin-left: 30px;
 }
 
-.face {
-  // display: block;
-  // border-top-left-radius: 4px;
-  // border-top-right-radius: 4px;
-  // min-width: 270px;
-}
-
-.about-person {
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding-bottom: 24px;
-  // background-color: var(--primary-white-color);
-  // border-bottom-left-radius: 4px;
-  // border-bottom-right-radius: 4px;
-
-  .name {
-    // margin-top: 0;
-    // margin-bottom: 10px;
-    // padding-top: 30px;
-
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.18;
-    // text-align: center;
-  }
-
-  .profession {
-    // margin-top: 0;
-    // margin-bottom: 16px;
-
-    // font-weight: 400;
-    // text-align: center;
-  }
-
-  .social-network {
-    // @extend %flex;
-    // justify-content: center;
-
-    // margin-left: auto;
-    // margin-right: auto;
-
-    // width: 207px;
-    // height: 44px;
-  }
-}
-
-.social-network {
-  .item {
-    // box-shadow: none;
-  }
-
-  & .item:hover .team-icon,
-  & .item:focus .team-icon {
-    // fill: $primaryWhiteColor;
-  }
-}
-
-.social-network .item + .item {
-  // margin-left: 10px;
-}
-
-.team-link {
+.customers .item {
   // @extend %centredFlex;
-  // width: 44px;
-  // height: 44px;
 
-  // border-radius: 50%;
-
-  // transition: background-color $duration $timingFunction;
+  // border: 1px solid #afb1b8;
+  // border-radius: 4px;
+  // width: 170px;
+  // height: 90px;
+  // transition: border $duration $timingFunction;
 
   &:hover,
   &:focus {
-    // background-color: $accentColor;
-    // border-radius: 50%;
-    // cursor: pointer;
+    // border: 1px solid $accentColor;
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    // color: $accentColor;
   }
 }
 
-.team-icon {
-  // display: block;
-  // width: 20px;
-  // height: 20px;
-  // fill: #afb1b8;
-
-  // transition: fill $duration $timingFunction;
+.customers .icon {
+  // color: #afb1b8;
+  // transition: color $duration $timingFunction;
 }
+
+// .company1 {
+//   width: 44px;
+//   height: 49px;
+// }
+// .company2 {
+//   width: 40px;
+//   height: 52px;
+// }
+// .company3 {
+//   width: 41px;
+//   height: 42px;
+// }
+// .company4 {
+//   width: 79px;
+//   height: 42px;
+// }
+// .company5 {
+//   width: 59px;
+//   height: 47px;
+// }
+// .company6 {
+//   width: 88px;
+//   height: 45px;
+// }
