@@ -22,8 +22,8 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $duration $timingFunction;
 
-  width: 450px;
-  height: 609px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
 
   background-color: $primaryWhiteColor;
