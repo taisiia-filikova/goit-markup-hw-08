@@ -1,0 +1,47 @@
+.follow-us {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 94px;
+  }
+}
+
+.social-networks {
+  padding: 0;
+  @extend %centredFlex;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.social-networks .item + .item {
+  margin-left: 10px;
+}
+
+.social-networks .link {
+  @extend %centredFlex;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color $duration $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    cursor: pointer;
+  }
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $primaryWhiteColor;
+}

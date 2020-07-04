@@ -93,7 +93,7 @@ img {
   overflow: hidden;
 }
 
-.button, .button-modal {
+.button, .email-input .button-footer, .button-modal {
   display: inline-block;
   min-height: 50px;
   min-width: 200px;
@@ -118,7 +118,7 @@ img {
   margin: 0;
 }
 
-.advantages .background, .team-link, .customers .item, .checkbox-label {
+.advantages .background, .team-link, .customers .item, .social-networks, .social-networks .link, .checkbox-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,6 +926,244 @@ img {
 .company6 {
   width: 88px;
   height: 45px;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+footer a {
+  display: inline-block;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer-contacts {
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 69px;
+  }
+}
+
+.footer-contacts a {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts a {
+    margin-bottom: 9px;
+  }
+}
+
+.logo-footer {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+  }
+}
+
+.logo-footer > span {
+  color: #ffffff;
+}
+
+.footer-contacts .address {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts .address {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-contacts .link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts .mail {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts .mail {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .follow-us {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .follow-us {
+    margin-right: 94px;
+  }
+}
+
+.social-networks {
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.social-networks .item + .item {
+  margin-left: 10px;
+}
+
+.social-networks .link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-networks .link:hover, .social-networks .link:focus {
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.e-mail-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.email-input {
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .email-input {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .email-input {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.email-input .button-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 32px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.plane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .backdrop {
