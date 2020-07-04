@@ -32,6 +32,10 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+
+    width: calc(100%-2 * 15px);
+    height: auto;
   }
 
   @media screen and (min-width: $desktop) {
@@ -42,32 +46,60 @@
 .people .item {
   margin: 0;
   width: 100%;
+  height: auto;
+
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 30 px;
-    }
-
-    &:last-child {
-      margin-bottom: 60 px;
-    }
-  }
-
-  @media screen and (max-width: 1199px) {
-    width: 354px;
-
-    &:not(:nth-child(2n + 1)) {
-      margin-right: 30px;
-    }
-
-    &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    height: auto;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 8 * 15px) / 4);
+    height: auto;
+    margin: 15px;
+  }
 }
+
+// .people .item {
+//   margin: 0;
+//   width: 100%;
+//   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 1px 3px rgba(0, 0, 0, 0.12);
+//   border-radius: 4px;
+
+//   @media screen and (max-width: 767px) {
+//     &:not(:last-child) {
+//       margin-bottom: 30 px;
+//     }
+
+//     &:last-child {
+//       margin-bottom: 60 px;
+//     }
+//   }
+
+//   @media screen and (max-width: 1199px) {
+//     width: 354px;
+
+//     &:not(:nth-child(2n + 1)) {
+//       margin-right: 30px;
+//     }
+
+//     &:not(:nth-last-child(-n + 2)) {
+//       margin-bottom: 30px;
+//     }
+//   }
+// }
 
 // @media screen and (min-width: $desktop) {
 //   width: 270px;
@@ -89,11 +121,11 @@
 //     margin-bottom: 30px;
 //   }
 
-.people .item + .item {
-  @media screen and (min-width: $desktop) {
-    margin-left: 30px;
-  }
-}
+// .people .item + .item {
+//   @media screen and (min-width: $desktop) {
+//     margin-left: 30px;
+//   }
+// }
 
 .face {
   border-top-left-radius: 4px;

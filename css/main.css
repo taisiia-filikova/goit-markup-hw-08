@@ -691,6 +691,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
+    width: calc(100%-2 * 15px);
+    height: auto;
   }
 }
 
@@ -704,6 +707,7 @@ img {
 .people .item {
   margin: 0;
   width: 100%;
+  height: auto;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -711,28 +715,23 @@ img {
 
 @media screen and (max-width: 767px) {
   .people .item:not(:last-child) {
-    margin-bottom: 30 px;
-  }
-  .people .item:last-child {
-    margin-bottom: 60 px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .people .item {
-    width: 354px;
-  }
-  .people .item:not(:nth-child(2n + 1)) {
-    margin-right: 30px;
-  }
-  .people .item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .people .item {
+    width: calc((100% - 4 * 15px) / 2);
+    height: auto;
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .people .item + .item {
-    margin-left: 30px;
+  .people .item {
+    width: calc((100% - 8 * 15px) / 4);
+    height: auto;
+    margin: 15px;
   }
 }
 
