@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../img/Mobile/banner.jpg);
+    url(../img/mobile/banner.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -25,7 +25,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../img/Mobile/banner@2x.jpg);
+      url(../img/mobile/banner@2x.jpg);
   }
 
   @media screen and (min-width: $tablet) {
@@ -37,7 +37,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../img/Tablet/banner.jpg);
+      url(../img/tablet/banner.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../img/Tablet/banner@2x.jpg);
+      url(../img/tablet/banner@2x.jpg);
   }
 
   @media screen and (min-width: $desktop) {
@@ -61,7 +61,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../img/Desktop/banner.jpg);
+      url(../img/desktop/banner.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -72,7 +72,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../img/Desktop/banner.jpg);
+      url(../img/desktop/banner.jpg);
   }
 }
 
