@@ -99,6 +99,7 @@
 
 .button {
   @extend %mainButton;
+  display: block;
 
   padding: 10px 32px;
   margin-left: auto;

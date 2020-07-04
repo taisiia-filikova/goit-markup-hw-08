@@ -463,8 +463,8 @@ img {
   margin-bottom: 60px;
   padding-top: 118px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Mobile/banner.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Mobile/banner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/mobile/banner.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/mobile/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -472,8 +472,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Mobile/banner@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Mobile/banner@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/mobile/banner@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/mobile/banner@2x.jpg);
   }
 }
 
@@ -481,15 +481,15 @@ img {
   .hero {
     max-width: 768px;
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Tablet/banner.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Tablet/banner.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/tablet/banner.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/tablet/banner.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Tablet/banner@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Tablet/banner@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/tablet/banner@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/tablet/banner@2x.jpg);
   }
 }
 
@@ -498,15 +498,15 @@ img {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Desktop/banner.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Desktop/banner.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/desktop/banner.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/desktop/banner.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/Desktop/banner.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/Desktop/banner.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/desktop/banner.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/desktop/banner.jpg);
   }
 }
 
@@ -532,6 +532,7 @@ img {
 }
 
 .button {
+  display: block;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -562,12 +563,23 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .advantages .item {
+  .advantages .item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .advantages .item {
+    width: calc((100%-30px) / 2);
+    margin: 0;
+  }
+}
+
+.advantages .item:nth-child(2n + 1) {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
   .advantages .item + .item {
     margin-left: 30px;
   }
@@ -578,7 +590,6 @@ img {
   border-radius: 4px;
   width: 100%;
   height: 120px;
-  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -708,32 +719,32 @@ img {
 }
 
 .people .item {
+  margin: 0;
   width: 100%;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .people .item:not(:last-child) {
+    margin-bottom: 30 px;
+  }
+  .people .item:last-child {
+    margin-bottom: 60 px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .people .item {
     width: 354px;
-  }
-  .people .item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  .people .item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .people .item {
-    width: 270px;
+  .people .item + .item {
+    margin-left: 30px;
   }
-}
-
-.people .item:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 0;
 }
 
 .face {
@@ -808,6 +819,7 @@ img {
 
 .team-icon {
   display: block;
+  margin: 0;
   width: 20px;
   height: 20px;
   fill: #afb1b8;
