@@ -22,8 +22,8 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $duration $timingFunction;
 
-  max-width: 450px;
-  max-height: 609px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background-color: $primaryWhiteColor;
@@ -32,8 +32,8 @@
   border-radius: 4px;
 
   @media screen and (min-width: $desktop) {
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 .close {
