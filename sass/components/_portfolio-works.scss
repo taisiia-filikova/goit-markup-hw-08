@@ -1,0 +1,147 @@
+.works {
+  @extend %drumpingIndentation;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.works .item {
+}
+
+// .works .item {
+//   width: 100%;
+//   @media screen and (max-width: 767px) {
+//     &:not(:last-child) {
+//       margin-bottom: 30 px;
+//     }
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     &:not(:nth-child(2n)) {
+//       margin-right: 30px;
+//       min-width: 354px;
+//     }
+
+//     &:not(:nth-last-child(-n + 1)) {
+//       margin-bottom: 30px;
+//     }
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     &:not(:nth-child(3n)) {
+//       margin-right: 30px;
+//       min-width: 370px;
+//     }
+
+//     &:not(:nth-last-child(-n + 3)) {
+//       margin-bottom: 30px;
+//     }
+//   }
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       0px 1px 1px rgba(0, 0, 0, 0.12);
+//   }
+// }
+
+.thumb {
+  position: relative;
+
+  & img {
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &:hover .project::before {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:hover .description,
+  &:focus .description {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  color: $primaryWhiteColor;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  opacity: 0;
+  transform: translateY(+100%);
+  transition: transform $duration $timingFunction 250ms,
+    opacity $duration $timingFunction 250ms;
+}
+
+.works .project {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    opacity: 0;
+    transform: translateY(+100%);
+    transition: transform $duration $timingFunction,
+      opacity $duration $timingFunction;
+  }
+}
+
+.about-work {
+  padding: 20px 24px;
+  width: 100%;
+  // width: 370px;
+
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  background-color: $primaryWhiteColor;
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.type {
+  // margin: 0;
+  // font-size: 16px;
+  // line-height: 1.87;
+}
