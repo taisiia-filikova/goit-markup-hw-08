@@ -74,6 +74,7 @@ img {
 }
 
 .footer-title {
+  margin-top: 0;
   margin-bottom: 21px;
   color: #ffffff;
   font-weight: 700;
@@ -769,6 +770,7 @@ footer a {
 }
 
 .social-networks {
+  margin: 0;
   padding: 0;
 }
 
