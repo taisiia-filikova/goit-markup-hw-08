@@ -17,9 +17,9 @@
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
   transition: transform $duration $timingFunction;
 
   width: 95%;
@@ -36,6 +36,8 @@
   @media screen and (min-width: $tablet) {
     width: 450px;
     height: 609px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   @media screen and (min-width: $desktop) {

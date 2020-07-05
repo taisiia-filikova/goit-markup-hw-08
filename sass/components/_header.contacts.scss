@@ -40,8 +40,8 @@
 
   letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14px;
+  font-size: 18px;
+  line-height: 1.16;
 
   transition: background-color $duration $timingFunction;
 
@@ -58,9 +58,8 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-  }
-  @media screen and (min-width: $desktop) {
     font-size: 14px;
+    line-height: 1.14;
   }
 }
 

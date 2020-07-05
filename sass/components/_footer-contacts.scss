@@ -13,14 +13,6 @@
   @media screen and (min-width: $desktop) {
     margin-right: 69px;
   }
-
-  & a {
-    margin-bottom: 8px;
-
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 9px;
-    }
-  }
 }
 
 .logo-footer {
@@ -64,6 +56,7 @@
 .footer-contacts .link {
   font-style: normal;
   color: $footerTextColor;
+  margin: 0;
 }
 
 .footer-contacts .mail {

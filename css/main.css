@@ -66,16 +66,23 @@ img {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .footer-title {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -182,6 +189,7 @@ img {
     background-color: #ffffff;
     display: none;
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: 0;
     width: 100%;
@@ -245,8 +253,8 @@ img {
   display: inline-block;
   color: #212121;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -261,6 +269,8 @@ img {
     position: relative;
     padding-top: 33px;
     padding-bottom: 33px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -374,8 +384,8 @@ img {
   color: #757575;
   letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.14px;
+  font-size: 18px;
+  line-height: 1.16;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -396,12 +406,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts {
     font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -983,16 +989,6 @@ footer a {
   }
 }
 
-.footer-contacts a {
-  margin-bottom: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-contacts a {
-    margin-bottom: 9px;
-  }
-}
-
 .logo-footer {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -1036,6 +1032,7 @@ footer a {
 .footer-contacts .link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  margin: 0;
 }
 
 .footer-contacts .mail {
@@ -1191,10 +1188,10 @@ footer a {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 50%;
+  top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, 0) scale(1);
+          transform: translate(-50%, 0) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1211,6 +1208,9 @@ footer a {
   .modal {
     width: 450px;
     height: 609px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
