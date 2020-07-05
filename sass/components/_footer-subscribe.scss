@@ -19,6 +19,7 @@
 }
 
 .email-input {
+  width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -46,7 +47,7 @@
   }
 
   .button-footer {
-    // @extend %mainButton;
+    @extend %mainButton;
     display: flex;
     align-items: center;
     padding: 10px 32px;
