@@ -713,6 +713,7 @@ img {
   .people {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
@@ -736,6 +737,12 @@ img {
     width: calc((100% - 4 * 15px) / 2);
     height: auto;
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .people .person {
+    margin: 0;
   }
 }
 
@@ -1177,6 +1184,7 @@ footer a {
   .email-input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 

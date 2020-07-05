@@ -40,6 +40,7 @@
 
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
@@ -64,11 +65,9 @@
     margin: 15px;
   }
 
-  // @media screen and (min-width: $desktop) {
-  //   width: calc((100% - 8 * 15px) / 4);
-  //   height: auto;
-  //   margin: 15px;
-  // }
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 // .people .item {
