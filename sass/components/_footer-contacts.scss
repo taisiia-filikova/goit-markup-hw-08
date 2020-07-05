@@ -9,9 +9,11 @@
 
   @media screen and (min-width: $tablet) {
     margin-right: 165px;
+    text-align: center;
   }
   @media screen and (min-width: $desktop) {
     margin-right: 69px;
+    text-align: left;
   }
 }
 

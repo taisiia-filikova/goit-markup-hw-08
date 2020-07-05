@@ -90,6 +90,12 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -710,7 +716,7 @@ img {
   }
 }
 
-.people .item {
+.people .person {
   margin: 0;
   width: 100%;
   height: auto;
@@ -720,13 +726,13 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .people .item:not(:last-child) {
+  .people .person:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .people .item {
+  .people .person {
     width: calc((100% - 4 * 15px) / 2);
     height: auto;
     margin: 15px;
@@ -734,7 +740,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .people .item + .item {
+  .people .person + .person {
     margin-left: 30px;
   }
 }
@@ -804,7 +810,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 207px;
-  height: 44px;
 }
 
 .social-network .item {
@@ -817,8 +822,20 @@ img {
   fill: #ffffff;
 }
 
-.social-network .item + .item {
-  margin-left: 10px;
+@media screen and (max-width: 767px) {
+  .social-network .item + .item {
+    margin-left: 10px;
+  }
+}
+
+.social-network .item {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .social-network .item:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .team-link {
@@ -980,12 +997,14 @@ footer a {
 @media screen and (min-width: 768px) {
   .footer-contacts {
     margin-right: 165px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 69px;
+    text-align: left;
   }
 }
 
@@ -1095,9 +1114,21 @@ footer a {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-top: 57px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 0;
   }
 }
 

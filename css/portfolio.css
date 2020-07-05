@@ -90,6 +90,12 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -691,12 +697,14 @@ footer a {
 @media screen and (min-width: 768px) {
   .footer-contacts {
     margin-right: 165px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 69px;
+    text-align: left;
   }
 }
 
@@ -806,9 +814,21 @@ footer a {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-top: 57px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 0;
   }
 }
 
