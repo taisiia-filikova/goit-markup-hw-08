@@ -94,18 +94,6 @@ img {
   overflow: hidden;
 }
 
-.email-input .button-footer {
-  display: inline-block;
-  min-height: 50px;
-  min-width: 200px;
-  border-radius: 4px;
-  border: none;
-  color: #ffffff;
-  background-color: #2196f3;
-  text-align: center;
-  cursor: pointer;
-}
-
 .navigation, .navigation .link, .header-contacts, .menu-button, .works {
   padding: 0;
   margin: 0;
@@ -866,6 +854,17 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 32px;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  background-color: #2196f3;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   padding: 10px 32px;
   font-weight: 900;
   font-size: 16px;
