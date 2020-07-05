@@ -3,12 +3,9 @@
 }
 
 .team {
-  @extend %drumpingIndentation;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 60px;
-
-  width: 100%;
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;

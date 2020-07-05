@@ -182,6 +182,11 @@ img {
   border: 1px solid #ececec;
 }
 
+.mobile-menu {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     background-color: #ffffff;
@@ -536,7 +541,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .works {
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
