@@ -717,7 +717,6 @@ img {
   .people {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin: 0;
   }
 }
 
@@ -1397,7 +1396,8 @@ footer a {
   outline: none;
 }
 
-.form-texterea:focus + .comment-label {
+.form-texterea:focus + .comment-label,
+.form-texterea:not(:placeholder-shown) + .comment-label {
   color: #2196f3;
   -webkit-transform: translateY(-33px);
           transform: translateY(-33px);

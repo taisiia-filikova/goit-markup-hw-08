@@ -81,7 +81,8 @@
     outline: none;
   }
 
-  &:focus + .comment-label {
+  &:focus + .comment-label,
+  &:not(:placeholder-shown) + .comment-label {
     color: $accentColor;
     transform: translateY(-33px);
   }
